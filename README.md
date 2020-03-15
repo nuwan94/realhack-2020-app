@@ -1,2 +1,3 @@
-# realhack-2020
-Official website of the RealHack 3.0
+# RealHack 3.0 Official Website
+
+Dsigned and developed by NSA94
