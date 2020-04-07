@@ -11,6 +11,8 @@ const { winPath } = utils;
 const { ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION, REACT_APP_ENV, GA_KEY } = process.env;
 
 export default defineConfig({
+  base: '/realhack-2020-app/',
+  publicPath: '/realhack-2020-app/',
   hash: true,
   antd: {},
   analytics: GA_KEY ? { ga: GA_KEY } : false,
