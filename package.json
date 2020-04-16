@@ -1,8 +1,8 @@
 {
-  "name": "ant-design-pro",
+  "name": "realhack-2020-app",
   "version": "1.0.0",
   "private": true,
-  "description": "An out-of-box UI solution for enterprise applications",
+  "description": "Official web applicaiton of RealHack 3.0",
   "homepage": "https://github.com/nuwan94/realhack-2020-app/",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",

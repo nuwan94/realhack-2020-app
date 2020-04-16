@@ -44,7 +44,6 @@ export interface DefaultSettings {
 
 export default {
   navTheme: 'dark',
-  // 拂晓蓝
   primaryColor: '#1890ff',
   layout: 'sidemenu',
   contentWidth: 'Fluid',
@@ -55,7 +54,7 @@ export default {
   menu: {
     locale: true,
   },
-  title: 'Ant Design Pro',
-  pwa: false,
+  title: 'RealHack 3.0',
+  pwa: true,
   iconfontUrl: '',
 } as DefaultSettings;
