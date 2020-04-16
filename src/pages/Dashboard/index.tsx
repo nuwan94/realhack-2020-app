@@ -56,21 +56,22 @@ export default () => {
   return (
     <PageHeaderWrapper content="Challenges">
       <Card>
-        <Row gutter={[16, 16]} justify="space-around" align="middle">
-          <Col span={9}>
+        <Row gutter={[16, 16]} justify="center" align="middle">
+          <Col xs={24} lg={9}>
             <TextArea
+              style={{ width: '100%' }}
               rows={10}
               onChange={(e) => setInputText(e.target.value)}
               defaultValue={inputText}
             />
           </Col>
-          <Col span={6}>
+          <Col xs={24} lg={6}>
             <Select
               showSearch
               placeholder="Select language"
               optionFilterProp="children"
               defaultValue={62}
-              style={{ width: 250, margin: 10 }}
+              style={{ width: '100%', margin: '10px auto' }}
               onSelect={(e: any) => setSelectedLanguage(e)}
             >
               {languages && languages.map((l: any) => <Option value={l.id}>{l.name}</Option>)}
@@ -79,8 +80,8 @@ export default () => {
               Submit
             </Button>
           </Col>
-          <Col span={9}>
-            <Button
+          <Col xs={24} lg={9}>
+            {/* <Button
               type="link"
               onClick={() => {
                 if (submission !== undefined) checkSubmission(submission.token);
@@ -96,8 +97,8 @@ export default () => {
               }}
             >
               Clear
-            </Button>
-            <Text code>{outputText?.status.description}</Text>
+            </Button> */}
+            <Text code>Status : {outputText?.status.description}</Text>
             <TextArea rows={10} value={outputText?.stdout} />
           </Col>
         </Row>
