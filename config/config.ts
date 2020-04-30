@@ -21,9 +21,7 @@ export default defineConfig({
     hmr: true,
   },
   locale: {
-    // default zh-CN
-    default: 'zh-CN',
-    // default true, when it is true, will use `navigator.language` overwrite default
+    default: 'en-US',
     antd: true,
     baseNavigator: true,
   },
@@ -45,6 +43,12 @@ export default defineConfig({
           icon: 'eye',
           path: '/',
           component: './Dashboard',
+        },
+        {
+          name: 'scoreboard',
+          icon: 'bars',
+          path: '/score',
+          component: './Home',
         },
         {
           component: './404',

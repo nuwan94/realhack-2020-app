@@ -74,7 +74,12 @@ export default () => {
               style={{ width: '100%', margin: '10px auto' }}
               onSelect={(e: any) => setSelectedLanguage(e)}
             >
-              {languages && languages.map((l: any) => <Option value={l.id}>{l.name}</Option>)}
+              {languages &&
+                languages.map((l: any) => (
+                  <Option key={l.id} value={l.id}>
+                    {l.name}
+                  </Option>
+                ))}
             </Select>
             <Button block type="primary" onClick={onSubmit}>
               Submit
